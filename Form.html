@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+<h1>Student Registration Form</h1>
+
+<form id="registrationForm">
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+        <label for="mobile">Mobile No:</label>
+        <input type="number" id="mobile" name="mobile" min="0" max="10" required>
+    </div>
+
+    <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="subject">Subject:</label>
+        <select id="subject" name="subject" required>
+            <option value="">Select a subject</option>
+            <option value="humanities">Humanities</option>
+            <option value="commerce">Commerce</option>
+            <option value="science">Science</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label>
+    </div>
+
+    <div class="form-group">
+        <button type="submit">Submit</button>
+    </div>
+</form>
+</body>
+</html>
