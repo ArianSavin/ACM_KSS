@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Recruitment Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: url(https://img.freepik.com/free-vector/abstract-paper-cut-backgrounds-template_1142-9285.jpg?size=626&ext=jpg&ga=GA1.1.967060102.1729382400&semt=ais_hybrid);
+            background-size: cover;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        form {
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        form h1 {
+            color: #ffffff;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        form .form-group {
+            width: 100%;
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        form label {
+            color: #a3d8f4;
+            margin-bottom: 5px;
+            width: 80%;
+            text-align: left;
+        }
+        form input, form select, form textarea {
+            width: 80%;
+            height: 40px;
+            border-radius: 25px;
+            outline: none;
+            padding-left: 15px;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid #4cb6e4;
+            color: #d0f4de;
+            margin-bottom: 10px;
+        }
+        form textarea {
+            height: 80px;
+            padding: 15px;
+            border-radius: 15px;
+        }
+        form input:hover, form select:hover, form textarea:hover {
+            border: 3px solid #a3d8f4;
+        }
+        .radio-group {
+            display: flex;
+            gap: 10px;
+            width: 80%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .radio-group input[type="radio"] {
+            accent-color: #4cb6e4;
+        }
+        .radio-group label {
+            color: #d0f4de;
+            font-size: 0.9em;
+        }
+        form button {
+            width: 80%;
+            height: 40px;
+            background-color: #4cb6e4;
+            color: #ffffff;
+            border-radius: 25px;
+            transition: background-color 0.3s, color 0.3s;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        form button:hover {
+            background-color: #66d9f4;
+            color: #ffffff;
+        }
+    </style>
+        
+</head>
+
+<body>
+
+<form id="registrationForm">
+    <h1>Employee Recruitment Form</h1>
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+        <label for="mobile">Mobile No:</label>
+        <input type="number" id="mobile" name="mobile" min="0" max="10" required>
+    </div>
+
+    <div class="form-group">
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="question">Why we should hire you?:</label>
+        <select id="question" name="question" required>
+            <option selected>Your answer</option>
+            <option value="1">My skills make me a strong fit for this company.</option>
+            <option value="2">I excel at overcoming challenges.</option>
+            <option value="3">My interests align well with your company.</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Gender:</label><br>
+        <div class="radio-group">
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <button type="submit">Submit</button>
+    </div>
+</form>
+</body>
+</html>

@@ -1,16 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect teams</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <b>Ola</b>
-    <i>Mis</i>
-    <u>Amigos</u>
-    <div>
-        Blah blah
+    <!-- Navbar -->
+    <div class="navbar flex items-center justify-between px-8 py-6">
+        <div class="flex gap-2 items-center">
+            <div>
+                <a href="#"><img src="assets/logo.svg" alt="logo" /></a>
+            </div>
+            <div class="text-2xl font-bold">
+                Connect teams
+            </div>
+        </div>
+        <div class="flex gap-4 text-xl">
+            <div class="flex gap-4 font-semibold">
+                <a href="#Products" class="hover:rotate-45 hover:text-red-400 scale-110 duration-300 transition-all">Products</a>
+                <a href="#Tools">Tools</a>
+                <a href="#Features">Features</a>
+                <a href="#Plans">Our Plans</a>
+            </div>
+            <div class="button bg-green-400 px-4 py-1 rounded-md border-b-4 border-2 border-r-4 border-black text-xl font-bold">
+                <button>Login</button>
+            </div>
+        </div>
     </div>
-    <img src="hehe-cat-cute-hehe.gif" alt=""/>
+    <!-- Hero -->
+     <div class="hero flex mt-20 px-20 justify-between">
+        <div class="hero-content space-y-6">
+            <h1 class="text-8xl font-bold">Colaborate<br> across the world</h1>
+            <p class="text-2xl max-w-lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam quasi obcaecati, ipsa non et inventore sapiente, enim nihil similique ratione nostrum fugit, quam minima ab sunt adipisci ullam harum id!</p>
+            <div class="flex gap-4">
+                <button class="button bg-white px-4 py-1 rounded-md border-b-4 border-2 border-r-4 border-black text-xl font-bold">Get Started</button>
+                <button class="button bg-green-400 px-4 py-1 rounded-md border-b-4 border-2 border-r-4 border-black text-xl font-bold">Our Plans</button>
+            </div>
+        </div>
+        <div class="hero-img">
+            <img src="assets/humans.svg" alt="img" />
+        </div>
+     </div>
+     
+     <!-- Cards -->
+      <div class="card-container flex gap-6 px-20 mt-20 mb-20">
+        <div class="card1 w-1/2 bg-pink-300 rounded-lg px-10 py-8 border-b-4 border-2 border-r-4 border-black flex justify-between items-center gap-10">
+            <div class="card-img">
+                <img src="assets/card-img/c1.svg" alt="img" class="w-44">
+            </div>
+            <div class="card-content space-y-2">
+                <h1 class="text-2xl font-bold">Community Insights</h1>
+                <p class="font-semibold text-lg max-w-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aspernatur fuga nisi, pariatur in distinctio id atque laborum inventore itaque rem rerum omnis facere porro nesciunt molestias libero laudantium ipsum!</p>
+                <div><a href="#">Check the community</a></div>
+            </div>
+        </div>
+        <div class="card1 w-1/2 bg-yellow-300 rounded-lg px-10 py-8 border-b-4 border-2 border-r-4 border-black flex justify-between items-center gap-10">
+            <div class="card-img">
+                <img src="assets/card-img/c2.svg" alt="img" class="w-44">
+            </div>
+            <div class="card-content space-y-2">
+                <h1 class="text-2xl font-bold">Community Insights</h1>
+                <p class="font-semibold text-lg max-w-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aspernatur fuga nisi, pariatur in distinctio id atque laborum inventore itaque rem rerum omnis facere porro nesciunt molestias libero laudantium ipsum!</p>
+                <div><a href="#" class="font-bold underline text-lg">Check the community</a></div>
+            </div>
+        </div>
+      </div>
+    <!-- Footer -->
+     <div class="footer flex px-20 py-6 justify-between">
+        <div class="flex items-center gap-4">
+            <div class="footer-icons flex gap-4 justify-between items-center">
+                <div>
+                    <svg id='YouTube_24' width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><rect width='24' height='24' stroke='none' fill='#000000' opacity='0'/>
+
+
+                    <g transform="matrix(0.16 0 0 0.16 12 12)" >
+                    <g style="" >
+                    <g transform="matrix(1 0 0 1 0 0)" >
+                    <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,105,123); fill-rule: nonzero; opacity: 1;" transform=" translate(-64, -64)" d="M 86.2 104 L 41.8 104 C 32 104 24 96 24 86.2 L 24 41.8 C 24 32 32 24 41.8 24 L 86.19999999999999 24 C 96 24 104 32 104 41.8 L 104 86.19999999999999 C 104 96 96 104 86.2 104 z" stroke-linecap="round" />
+                    </g>
+                    <g transform="matrix(1 0 0 1 0 0)" >
+                    <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,105,123); fill-rule: nonzero; opacity: 1;" transform=" translate(-64, -64)" d="M 86.2 104 L 41.8 104 C 32 104 24 96 24 86.2 L 24 41.8 C 24 32 32 24 41.8 24 L 86.19999999999999 24 C 96 24 104 32 104 41.8 L 104 86.19999999999999 C 104 96 96 104 86.2 104 z" stroke-linecap="round" />
+                    </g>
+                    <g transform="matrix(1 0 0 1 -0.25 -23.75)" >
+                    <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" translate(-63.75, -40.25)" d="M 24 41.8 L 24 56.5 C 38.5 45.4 65.2 31.6 103.5 37.5 C 101.5 29.7 94.6 24 86.2 24 L 41.8 24 C 32 24 24 32 24 41.8 z" stroke-linecap="round" />
+                    </g>
+                    <g transform="matrix(1 0 0 1 2.5 0)" >
+                    <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" translate(-66.5, -64)" d="M 53.5 49 L 53.5 79 L 79.5 64 z" stroke-linecap="round" />
+                    </g>
+                    <g transform="matrix(1 0 0 1 0 0)" >
+                    <path style="stroke: rgb(68,75,84); stroke-width: 6; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform=" translate(-64, -64)" d="M 86.2 104 L 41.8 104 C 32 104 24 96 24 86.2 L 24 41.8 C 24 32 32 24 41.8 24 L 86.19999999999999 24 C 96 24 104 32 104 41.8 L 104 86.19999999999999 C 104 96 96 104 86.2 104 z" stroke-linecap="round" />
+                    </g>
+                    </g>
+                    </g>
+                    </svg>
+                </div>
+                <div>
+                    <svg id='Facebook_24' width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><rect width='24' height='24' stroke='none' fill='#000000' opacity='0'/>
+                            <g transform="matrix(0.42 0 0 0.42 12 12)" >
+                            <g style="" >
+                            <g transform="matrix(1 0 0 1 0 0)" >
+                            <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(3,155,229); fill-rule: nonzero; opacity: 1;" transform=" translate(-24, -24)" d="M 24 5 C 13.506589753214925 5 5 13.506589753214925 5 24 C 5 34.493410246785075 13.506589753214925 43 24 43 C 34.493410246785075 43 43 34.493410246785075 43 24 C 43 13.506589753214925 34.493410246785075 5 24 5 Z" stroke-linecap="round" />
+                            </g>
+                            <g transform="matrix(1 0 0 1 0.38 3.9)" >
+                            <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" translate(-24.38, -27.9)" d="M 26.572 29.036 L 31.488999999999997 29.036 L 32.260999999999996 24.041 L 26.570999999999994 24.041 L 26.570999999999994 21.311 C 26.570999999999994 19.236 27.248999999999995 17.396 29.189999999999994 17.396 L 32.309 17.396 L 32.309 13.037 C 31.760999999999996 12.963000000000001 30.601999999999997 12.801 28.412 12.801 C 23.839 12.801 21.158 15.216000000000001 21.158 20.718 L 21.158 24.041 L 16.457 24.041 L 16.457 29.036 L 21.158 29.036 L 21.158 42.765 C 22.089 42.905 23.032 43 24 43 C 24.875 43 25.729 42.92 26.572 42.806 L 26.572 29.036 z" stroke-linecap="round" />
+                            </g>
+                            </g>
+                            </g>
+                            </svg>
+                </div>
+                <div>
+                    <svg id='Discord_24' width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><rect width='24' height='24' stroke='none' fill='#000000' opacity='0'/>
+                            <g transform="matrix(0.45 0 0 0.45 12 12)" >
+                            <path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(140,158,255); fill-rule: nonzero; opacity: 1;" transform=" translate(-24, -24)" d="M 40 12 C 40 12 35.415 8.411999999999999 30 8 L 29.512 8.975999999999999 C 34.408 10.174 36.654 11.891 39 14 C 34.955 11.935 30.961 10 24 10 C 17.039 10 13.045 11.935 9 14 C 11.346 11.891 14.018 9.985 18.488 8.975999999999999 L 18 8 C 12.318999999999999 8.537 8 12 8 12 C 8 12 2.8789999999999996 19.425 2 34 C 7.162 39.953 15 40 15 40 L 16.639 37.815 C 13.857 36.848 10.715 35.121 8 32 C 11.238 34.45 16.125 37 24 37 C 31.875 37 36.762 34.45 40 32 C 37.285 35.121 34.143 36.848 31.361 37.815 L 33 40 C 33 40 40.838 39.953 46 34 C 45.121 19.425 40 12 40 12 z M 17.5 30 C 15.567 30 14 28.209 14 26 C 14 23.791 15.567 22 17.5 22 C 19.433 22 21 23.791 21 26 C 21 28.209 19.433 30 17.5 30 z M 30.5 30 C 28.567 30 27 28.209 27 26 C 27 23.791 28.567 22 30.5 22 C 32.433 22 34 23.791 34 26 C 34 28.209 32.433 30 30.5 30 z" stroke-linecap="round" />
+                            </g>
+                            </svg>
+                </div>
+            </div>
+            <div class="footer-links flex gap-4 font-semibold text-neutral-600">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Our Projects</a>
+                <a href="#">Help Center</a>
+            </div>
+        </div>
+        <div>
+            <p class="font-semibold text-neutral-600 text-sm">&copy; 2024 ConnectTeams</p>
+        </div>
+     </div>
 </body>
 </html>
